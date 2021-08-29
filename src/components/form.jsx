@@ -28,7 +28,7 @@ const TransactionHistory = ({ amount, setAmount, fromChain, setFromChain, toChai
                 Amount:
                 <input type="text" name="Amount" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
             </label>
-        <button onClick={() => clickEvent}>Proceed</button>
+        <button onClick={() => clickEvent()}>Proceed</button>
         </div>)
 };
 export default TransactionHistory;

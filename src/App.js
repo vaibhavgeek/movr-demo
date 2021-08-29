@@ -116,7 +116,7 @@ function App() {
         toToken={toToken}
         setToToken={setToToken}
         amount={amount}
-        clickEvent={(e) => transferFunction()} />
+        clickEvent={transferFunction} />
       {status && <> {status} </>}
     </div>
   );
