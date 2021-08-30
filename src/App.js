@@ -53,8 +53,8 @@ function App() {
 
       const movr = new Movr(signer)
 
-      const sendingChain = new Chain(fromChain, process.env.POLYGON_RPC_NODE)
-      const destinationChain = new Chain(toChain, process.env.XDAI_RPC_NODE)
+      const sendingChain = new Chain(fromChain, 'https://rpc-mainnet.matic.network/')
+      const destinationChain = new Chain(toChain, 'https://rpc.xdaichain.com/')
       // from Chain  - 137 
       // to Chain - 100 
 
