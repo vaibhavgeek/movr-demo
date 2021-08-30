@@ -1,6 +1,6 @@
 import './../App.css';
 
-const TransactionHistory = ({ amount, setAmount, fromChain, setFromChain, toChain, setToChain, fromToken, setFromToken, toToken, setToToken, clickEvent }) => {
+const Form = ({ amount, setAmount, fromChain, setFromChain, toChain, setToChain, fromToken, setFromToken, toToken, setToToken, clickEvent }) => {
     return (
         <div className="form">
             <label>
@@ -31,4 +31,4 @@ const TransactionHistory = ({ amount, setAmount, fromChain, setFromChain, toChai
         <button onClick={() => clickEvent()}>Proceed</button>
         </div>)
 };
-export default TransactionHistory;
+export default Form;
