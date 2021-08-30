@@ -26,7 +26,7 @@ const Form = ({ amount, setAmount, fromChain, setFromChain, toChain, setToChain,
 
             <label>
                 Amount:
-                <input type="text" name="Amount" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
+                <input name="Amount" type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
             </label>
         <button onClick={() => clickEvent()}>Proceed</button>
         </div>)
