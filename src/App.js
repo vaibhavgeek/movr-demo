@@ -38,14 +38,14 @@ function App() {
       const sendingChain = new Chain(137, process.env.POLYGON_RPC_NODE)
       const destinationChain = new Chain(100, process.env.XDAI_RPC_NODE)
 
-      const USDC_POLGYON_ADDRESS = toChain;
+      const USDC_POLGYON_ADDRESS = '0x2791bca1f2de4661ed88a30c99a7a9449aa84174'
 
       const token = new Token(
         USDC_POLGYON_ADDRESS,
         sendingChain,
       )
 
-      const amount = amount;
+      const amount = '1000000'
 
       const result = await movr
         .connect(signer)
