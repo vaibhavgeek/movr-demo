@@ -25,16 +25,21 @@ function App() {
 
   const [status, setStatus] = useState(null);
 
+  if (typeof window.ethereum !== 'undefined') {
+    console.log('MetaMask is installed!');
+  }
+
   async function transferFunction() {
     try {
+      
       const provider = new ethers.providers.Web3Provider(window.ethereum);
-
+      
       await provider.send("eth_requestAccounts", []);
 
       const signer = provider.getSigner();
-
+      console.log(await signer.getAddress());
       const movr = new Movr(signer)
-
+      console.log(movr);
       const sendingChain = new Chain(137, process.env.POLYGON_RPC_NODE)
       const destinationChain = new Chain(100, process.env.XDAI_RPC_NODE)
 
